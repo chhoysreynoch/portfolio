@@ -360,80 +360,99 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="projects-section">
       <div class="section-container">
         <div class="section-header">
-          <h2 class="section-title fade-in">Projects Experience</h2>
+          <h2 class="project-title fade-in">Project Experience</h2>
         </div>
-        <div class="projects-container fade-in">
-          <div class="project-card" data-category="web">
-            <div class="project-info">
-              <div class="project-header">
-                <h3>Krorya</h3>
+
+        <div class="project-showcase fade-in">
+          <!-- Project 1 -->
+          <div class="project-card active" data-project="0">
+            <div class="project-content">
+              <div class="project-info">
+                <div class="project-number">01</div>
+                <h3 class="project-title">Krorya</h3>
+                <p class="project-description">
+                  A mobile application that creates a platform to promote Khmer
+                  food culture by enabling users to sell homemade dishes,
+                  purchase meals, and share their favorite recipes.
+                </p>
+                <div class="project-tech">
+                  <div class="tech-category">
+                    <span class="tech-label">Using:</span>
+                    <span class="tech-stack">Swift, Figma, Spring Boot, Git/Github</span>
+                  </div>
+                </div>
               </div>
-              <p>
-                A mobile application that create a platform to promotes Khmer
-                food culture by enabling users to sell homemade dishes, purchase
-                meals, and share their favorite recipes.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Swift</span>
-                <span class="project-tag">Figma</span>
-                <span class="project-tag">Spring Boot</span>
-                <span class="project-tag">Git/Github</span>
+              <div class="project-image">
+                <img src="/assets/Krorya.png" alt="Krorya Mobile App" />
               </div>
-            </div>
-            <div class="project-image">
-              <img src="/assets/Krorya.png" alt="Krorya" />
             </div>
           </div>
 
-          <div class="project-card" data-category="mobile">
-            <div class="project-info">
-              <div class="project-header">
-                <h3>Assessify</h3>
+          <!-- Project 2 -->
+          <div class="project-card" data-project="1">
+            <div class="project-content">
+              <div class="project-info">
+                <div class="project-number">02</div>
+                <h3 class="project-title">Assessify</h3>
+                <p class="project-description">
+                  This website was created to help companies assess and improve
+                  employee performance. It enables self-evaluations and
+                  supervisor reviews. Its main goal is to make evaluations
+                  smooth and effective.
+                </p>
+                <div class="project-tech">
+                  <div class="tech-category">
+                    <span class="tech-label">Using:</span>
+                    <span class="tech-stack">Next.js, UX/UI, Spring Boot, Database, Git/Github</span>
+                  </div>
+                </div>
               </div>
-              <p>
-                This website was created to helps companies assess and improve
-                employee performance. It enables self-evaluations and supervisor
-                reviews. Its main goal is to make evaluations smooth and
-                effective.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Next.js</span>
-                <span class="project-tag">UX/UI</span>
-                <span class="project-tag">Spring boot</span>
-                <span class="project-tag">Database</span>
-                <span class="project-tag">Git/GitHub</span>
+              <div class="project-image">
+                <img src="/assets/Assessify.png" alt="Assessify Platform" />
               </div>
-            </div>
-            <div class="project-image">
-              <img src="/assets/Assessify.png" alt="Assessify" />
             </div>
           </div>
 
-          <div class="project-card" data-category="design">
-            <div class="project-info">
-              <div class="project-header">
-                <h3>LN-Shopping</h3>
+          <!-- Project 3 -->
+          <div class="project-card" data-project="2">
+            <div class="project-content">
+              <div class="project-info">
+                <div class="project-number">03</div>
+                <h3 class="project-title">LN-Shopping</h3>
+                <p class="project-description">
+                  A E-commerce responsive website that allows users to sell and
+                  buy products online. It provides a user-friendly interface for
+                  browsing products, adding them to the cart, and making
+                  purchases.
+                </p>
+                <div class="project-tech">
+                  <div class="tech-category">
+                    <span class="tech-label">Using:</span>
+                    <span class="tech-stack">React, Bootstrap, Laravel, MySQL, Git/Github</span>
+                  </div>
+                </div>
               </div>
-              <p>
-                A E-commerce responsive website that allows users to sell and
-                buy products online. It provides a user-friendly interface for
-                browsing products, adding them to the cart, and making
-                purchases.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">React</span>
-                <span class="project-tag">Laravel</span>
-                <span class="project-tag">Bootstrap</span>
-                <span class="project-tag">MySQL</span>
-                <span class="project-tag">Git/GitHub</span>
+              <div class="project-image">
+                <img src="/assets/LN.png" alt="LN-Shopping E-commerce" />
               </div>
             </div>
-            <div class="project-image">
-              <img src="/assets/ecommerce.png" alt="Ecommerce Website" />
+          </div>
+
+          <div class="project-navigation">
+            <button class="nav-button prev" aria-label="Previous project">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="project-indicators">
+              <span class="indicator active" data-project="0"></span>
+              <span class="indicator" data-project="1"></span>
+              <span class="indicator" data-project="2"></span>
             </div>
+            <button class="nav-button next" aria-label="Next project">
+              <i class="fas fa-chevron-right"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -531,16 +550,32 @@
             </div>
 
             <div class="social-links-large">
-              <a href="https://github.com/chhoysreynoch" target="_blank" rel="noopener noreferrer" class="social-link"
+              <a
+                href="https://github.com/chhoysreynoch"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
                 ><i class="fab fa-github"></i
               ></a>
-              <a href="https://www.linkedin.com/in/chhoy-sreynoch-509792345" target="_blank" rel="noopener noreferrer" class="social-link"
+              <a
+                href="https://www.linkedin.com/in/chhoy-sreynoch-509792345"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
                 ><i class="fab fa-linkedin"></i
               ></a>
-              <a href="https://t.me/chhoy_sreynoch" target="_blank" rel="noopener noreferrer" class="social-link"
+              <a
+                href="https://t.me/chhoy_sreynoch"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
                 ><i class="fab fa-telegram"></i
               ></a>
-              <a href="https://mail.google.com/mail/?view=cm&to=chhoysreynoch@gamil.com&su=My%20Subject&body=My%20Body" target="_blank" rel="noopener noreferrer" class="social-link"
+              <a
+                href="https://mail.google.com/mail/?view=cm&to=chhoysreynoch@gamil.com&su=My%20Subject&body=My%20Body"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
                 ><i class="fas fa-envelope"></i
               ></a>
             </div>
@@ -767,6 +802,52 @@
         } else {
           observer.observe(el);
         }
+      });
+
+      let currentProject = 0;
+      const totalProjects = 3;
+
+      function showProject(index) {
+        // Hide all project cards
+        const cards = document.querySelectorAll(".project-card");
+        const indicators = document.querySelectorAll(".indicator");
+
+        cards.forEach((card) => card.classList.remove("active"));
+        indicators.forEach((indicator) => indicator.classList.remove("active"));
+
+        // Show selected project
+        cards[index].classList.add("active");
+        indicators[index].classList.add("active");
+
+        currentProject = index;
+      }
+
+      function nextProject() {
+        const next = (currentProject + 1) % totalProjects;
+        showProject(next);
+      }
+
+      function prevProject() {
+        const prev = (currentProject - 1 + totalProjects) % totalProjects;
+        showProject(prev);
+      }
+
+      // Event listeners
+      document
+        .querySelector(".nav-button.next")
+        .addEventListener("click", nextProject);
+      document
+        .querySelector(".nav-button.prev")
+        .addEventListener("click", prevProject);
+
+      // Indicator click events
+      document.querySelectorAll(".indicator").forEach((indicator, index) => {
+        indicator.addEventListener("click", () => showProject(index));
+      });
+
+      // Initialize
+      document.addEventListener("DOMContentLoaded", () => {
+        showProject(0);
       });
     </script>
   </body>
